@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Michael Francis
+  location: Roselle, NJ
+  email: mikefrancis95@gmail.com
+  website: https://michaelfrancis.me
+  social_networks:
+    - network: GitHub
+      username: mfrancis95
+    - network: LinkedIn
+      username: mfrancis95
+  custom_connections:
+  sections:
+    experience:
+      - company: IBM
+        position: Lead Software Engineer
+        start_date: 2022-02
+        end_date: present
+        location: New York, NY
+        summary:
+        highlights:
+          - Technical lead and architect for a team of full-stack developers, DevOps engineer, business analyst and product owner.
+          - Collaborate with business partners, stakeholders and other teams across IBM to drive implementations of high-revenue ordering, reporting, software downloading and account management features in an enterprise portal used by hundreds of thousands of customers, sellers and distributors alike.
+          - Spearhead initiatives to sunset legacy applications to reduce the team's technical footprint and migrate others to a more modern tech stack, championing cloud-native technology and CI/CD designed to adhere to strong DevSecOps principles and improve the developer experience.
+      - company: IBM
+        position: Software Engineer
+        start_date: 2020-10
+        end_date: 2022-02
+        location: New York, NY
+        summary:
+        highlights:
+          - Lead architect on a common, high-level payment gateway infrastructure, supporting services such as card authorisation, wallet management and payment link generation.
+          - As part of the Digital Commerce squad, developed and maintained several full stack e-commerce applications.
+          - Created touchless checkout experiences for customers and design enhancements centered around increasing revenue.
+      - company: Northrop Grumman
+        position: Software Engineer
+        start_date: 2019-09
+        end_date: 2020-10
+        location: Buffalo, NY
+        summary:
+        highlights:
+          - Developed a set of features that support 3D transmit antenna pattern data in software and hardware.
+          - Built a GPU-accelerated sample-processing pipeline that works with external IF and IQ data.
+      - company: Energy Wall
+        position: Software Engineer
+        start_date: 2017-05
+        end_date: 2019-08
+        location: Lancaster, PA
+        summary:
+        highlights:
+          - Developed a web application for configuring ventilation units and simulating their performances.
+          - Wrote embedded software that enables an HVAC controller to be controlled remotely through BACnet.
+    skills:
+      - label: Languages
+        details: TypeScript/Node.js, Python, Java, C, C++, PHP, Ruby, SQL, HTML5/CSS/JavaScript
+      - label: Software Libraries/Frameworks
+        details: Express, Koa, Flask, JSP/JSTL/Servlets, JDBC, Spring Boot, Hibernate, Rails, Bootstrap, Carbon, Angular, React, Next.js, Vue.js, jQuery, OpenGL, OpenCL, OpenCV, CUDA, Thrust, SDL, JUnit, PowerMock, Jest, Nock, Pytest.
+      - label: CI/CD
+        details: Travis CI, Jenkins, GitHub Actions, Kubernetes, OpenShift, IBM Cloud, AWS, Azure, SonarQube, Mend, Detect Secrets, Tekton.
+      - label: Databases/Storage
+        details: MongoDB, Redis, S3, MariaDB/MySQL, Cloudant, DB2
+    education:
+      - institution: Rochester Institute of Technology
+        area: Computer Science
+        degree: MS
+        start_date: 2017-08
+        end_date: 2019-05
+        location: Rochester, NY
+        summary: 'GPA: 3.73, Specialization in Computer Graphics + Visualization'
+      - institution: Stony Brook University
+        area: Computer Science
+        degree: BS
+        start_date: 2013-08
+        end_date: 2017-05
+        location: Stony Brook, NY
+design:
+  theme: classic
+  page:
+    show_footer: false
+    show_top_note: false
+    top_margin: 0.4in
+  colors:
+    name: "#f05f40"
+    headline: "#f05f40"
+    connections: "#f05f40"
+    section_titles: "#f05f40"
+    links: "#f05f40"
+  typography:
+    font_family:
+      body: Raleway
+      name: Raleway
+      headline: Raleway
+      connections: Raleway
+      section_titles: Raleway
+  header:
+    space_below_name: 0.3cm
+  sections:
+    show_time_spans_in: []
+locale:
+  language: english
+settings:
+  render_command:
+    typst_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_Resume.typ
+    pdf_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_Resume.pdf
+    markdown_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_Resume.md
+    html_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_Resume.html
+    png_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_Resume.png
+  pdf_title: NAME - Resume
