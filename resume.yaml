@@ -14,14 +14,21 @@ cv:
     experience:
       - company: IBM
         position: Lead Software Engineer
-        start_date: 2022-02
+        start_date: 2024-04
         end_date: present
         location: New York, NY
         summary:
         highlights:
-          - Technical lead and architect for a team of full-stack developers, DevOps engineer, business analyst and product owner.
-          - Collaborate with business partners, stakeholders and other teams across IBM to drive implementations of high-revenue ordering, reporting, software downloading and account management features in an enterprise portal used by hundreds of thousands of customers, sellers and distributors alike.
-          - Spearhead initiatives to sunset legacy applications to reduce the team's technical footprint and migrate others to a more modern tech stack, championing cloud-native technology and CI/CD designed to adhere to strong DevSecOps principles and improve the developer experience.
+          - Collaborate with teams across IBM to develop a new ordering experience for customers built off of SAP Commerce Cloud.
+      - company: IBM
+        position: Lead Software Engineer
+        start_date: 2022-02
+        end_date: 2024-04
+        location: New York, NY
+        summary:
+        highlights:
+          - Collaborated with business partners, stakeholders and other teams across IBM to drive implementations of high-revenue ordering, reporting, software downloading and account management features in an enterprise portal used by hundreds of thousands of customers, sellers and distributors alike.
+          - Spearheaded initiatives to sunset legacy applications to reduce the team's technical footprint and migrate others to a more modern tech stack, championing cloud-native technology and CI/CD designed to adhere to strong DevSecOps principles and improve the developer experience.
       - company: IBM
         position: Software Engineer
         start_date: 2020-10
@@ -29,7 +36,7 @@ cv:
         location: New York, NY
         summary:
         highlights:
-          - Lead architect on a common, high-level payment gateway infrastructure, supporting services such as card authorisation, wallet management and payment link generation.
+          - Lead architect on a common, high-level payment gateway infrastructure, supporting services such as card authorization, wallet management and payment link generation.
           - As part of the Digital Commerce squad, developed and maintained several full stack e-commerce applications.
           - Created touchless checkout experiences for customers and design enhancements centered around increasing revenue.
       - company: Northrop Grumman
@@ -52,13 +59,13 @@ cv:
           - Wrote embedded software that enables an HVAC controller to be controlled remotely through BACnet.
     skills:
       - label: Languages
-        details: TypeScript/Node.js, Python, Java, C, C++, PHP, Ruby, SQL, HTML5/CSS/JavaScript
+        details: TypeScript/Node.js, Python, Java, C, C++, PHP, Ruby, SQL, HTML5/CSS/JavaScript.
       - label: Software Libraries/Frameworks
         details: Express, Koa, Flask, JSP/JSTL/Servlets, JDBC, Spring Boot, Hibernate, Rails, Bootstrap, Carbon, Angular, React, Next.js, Vue.js, jQuery, OpenGL, OpenCL, OpenCV, CUDA, Thrust, SDL, JUnit, PowerMock, Jest, Nock, Pytest.
       - label: CI/CD
-        details: Travis CI, Jenkins, GitHub Actions, Kubernetes, OpenShift, IBM Cloud, AWS, Azure, SonarQube, Mend, Detect Secrets, Tekton.
+        details: Travis CI, Jenkins, GitHub Actions, Docker, Kubernetes, OpenShift, IBM Cloud, AWS, Azure, SonarQube, Mend, Detect Secrets, Tekton.
       - label: Databases/Storage
-        details: MongoDB, Redis, S3, MariaDB/MySQL, Cloudant, DB2
+        details: MongoDB, Redis, S3, MariaDB/MySQL, Cloudant, DB2.
     education:
       - institution: Rochester Institute of Technology
         area: Computer Science
@@ -78,7 +85,8 @@ design:
   page:
     show_footer: false
     show_top_note: false
-    top_margin: 0.4in
+    top_margin: 0.3in
+    bottom_margin: 0.3in
   colors:
     name: "#f05f40"
     headline: "#f05f40"
