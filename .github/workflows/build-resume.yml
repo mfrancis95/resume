@@ -9,19 +9,22 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v6
-    
+
     - uses: actions/setup-python@v6
-      with:
-        python-version: '3.12'
-    
+
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    
+      run: pip install -r requirements.txt
+
     - name: Build Resume
-      run: |
-        rendercv render resume.yaml
+      run: rendercv render -nomd -nohtml -nopng resume.yaml
+      
+    - uses: shallwefootball/s3-upload-action@master
+      with:
+        aws_bucket: ${{ secrets.AWS_BUCKET }}
+        aws_key_id: ${{ secrets.AWS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+        destination_dir: ${{ secrets.DESTINATION_DIR }}
+        source_dir: rendercv_output
