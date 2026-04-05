@@ -22,6 +22,7 @@ jobs:
       run: rendercv render -nomd -nohtml -nopng resume.yaml
       
     - uses: shallwefootball/s3-upload-action@master
+      if: ${{ github.event_name == 'push' }}
       with:
         aws_bucket: ${{ secrets.AWS_BUCKET }}
         aws_key_id: ${{ secrets.AWS_KEY_ID }}
