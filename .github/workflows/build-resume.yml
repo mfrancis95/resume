@@ -19,11 +19,12 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Build Resume
-      run: |
-        rendercv render resume.yaml
-
-    - uses: aws-actions/configure-aws-credentials@v6.0.0
+      run: rendercv render -nomd -nohtml -nopng resume.yaml
+      
+    - uses: shallwefootball/s3-upload-action@master
       with:
-        aws-access-key-id: ${{ secrets.S3_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1
+        aws_bucket: ${{ secrets.AWS_BUCKET }}
+        aws_key_id: ${{ secrets.AWS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+        destination_dir: ${{ secrets.DESTINATION_DIR }}
+        source_dir: rendercv_output
